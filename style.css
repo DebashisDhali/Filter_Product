@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    
+    /* width: 100%;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    height: fit-content;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card1 {
+    height: 15rem;
+    width: 65%;
+    /* background-color: aquamarine; */
+    box-shadow: 0px 2px 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    gap: .5rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    border-radius: .2rem;
+}
+
+#image {
+    height: 90%;
+    width: 20%;
+    /* flex: 1; */
+    padding: .1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url();
+    /* background-color: aqua; */
+    background-size: cover; */
+    /* background-color: blueviolet; */
+}
+
+.info {
+    height: 90%;
+    width: 80%;
+    padding: 1rem;
+    padding-right: 1.5rem;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.price h2 {
+    text-align: center;
+    background-color: bisque;
+    color: red;
+
+}
+
+.divider {
+    height: 100%;
+    width: .2rem;
+    background-color: #666;
+}
+
+.searchsection {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#description {
+    margin-top: 1rem;
+}
+
+input {
+    width: 52rem;
+    height: 4rem;
+    margin-top: 1rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    font-size: 2rem;
+    border: 2px solid rgb(214, 127, 255);
+    outline: none;
+}
+
+input:focus-visible {
+    outline: 2px solid rgb(214, 127, 255);
+    border: none;
+}
+
+.card1:hover {
+    transform: scale(1.01);
+    transition: .2s ease-in-out;
+    box-shadow: 0px 7px 22px;
+}
+
+button:hover {
+    border: 2px solid rgb(214, 127, 255);
+    background-color: #66666699;
+    color: white;
+}
+
+button:active {
+    background-color: rgba(255, 228, 196, 0.57);
+    color: black;
+}
+
+button {
+    width: 5rem;
+    height: 4rem;
+    margin-top: 1rem;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+
+}
+
+@media(max-width:890px) {
+
+    .container{
+        height: fit-content;
+        width: 100%; 
+    }
+    .card1 {
+        height: fit-content;
+        max-width: 60%;
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #image {
+        height:50%;
+        width: 99%;
+        /* background-color: aqua; */
+    }
+
+    .info {
+        font-size: 90%;
+        width: 90%;
+        height: 90%;
+    }
+
+
+    .divider {
+        height: .2rem;
+        width: 100%;
+        background-color: #666;
+    }
+
+    .price h2 {
+        width: 100%;
+
+    }
+}
